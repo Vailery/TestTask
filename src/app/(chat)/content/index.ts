@@ -46,6 +46,7 @@ export interface Message {
     id: string;
     text: string;
     type: 'user' | 'bot';
+    actions?: Action[];
 }
 
 export const defaultMessages: Message[] = [
@@ -58,6 +59,7 @@ export const defaultMessages: Message[] = [
         id: '2',
         text: 'Yo, what\'s up? How can I help you today?',
         type: 'bot',
+        actions: defaultActions
     },
     {
         id: '3',
@@ -68,5 +70,6 @@ export const defaultMessages: Message[] = [
         id: '4',
         text: 'Cool, let\'s get that letter written! Could you share who the letter is for, the purpose (e.g., formal, informal, job application, complaint), and any specific points you want to include? This will help me craft something that hits the mark.',
         type: 'bot',
+
     }
 ];
