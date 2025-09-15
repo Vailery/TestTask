@@ -5,16 +5,17 @@ interface IconButtonProps {
     icon: LucideIcon;
     onClick?: () => void;
     className?: string;
+    size?: number;
 }
 
-export default function IconButton({ type, icon: Icon, onClick, className = "" }: IconButtonProps) {
+export default function IconButton({ type, icon: Icon, onClick, className = "", size = 20 }: IconButtonProps) {
     return (
         <button
             type={type}
             onClick={onClick}
             className={`bg-deep-gold p-2.5 rounded-md ${className}`}
         >
-            <Icon size={20} className="text-black" />
+            <Icon size={size} className="text-black" />
         </button>
     );
 }
