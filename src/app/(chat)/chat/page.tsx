@@ -32,7 +32,7 @@ export default function ChatPage() {
               <div className="flex gap-4 items-start py-3">
                 <Image src="/deepshit-logo.svg" alt="avatar" width={29} height={29} />
 
-                <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">Yo, what's up? How can I help you today?</p>
+                <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">Yo, what&apos;s up? How can I help you today?</p>
               </div>
 
               <div className="flex items-center gap-3">
@@ -55,7 +55,7 @@ export default function ChatPage() {
                 <Image src="/deepshit-logo.svg" alt="avatar" width={29} height={29} />
 
                 <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">
-                  Cool, let's get that letter written! Could you share who the letter is for, the purpose (e.g., formal, informal, job application, complaint), and any specific points you want to include? This will help me craft something that hits the mark.
+                  Cool, let&apos;s get that letter written! Could you share who the letter is for, the purpose (e.g., formal, informal, job application, complaint), and any specific points you want to include? This will help me craft something that hits the mark.
                 </p>
               </div>
 
