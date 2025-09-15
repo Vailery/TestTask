@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "./theme/index.css";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  @apply bg-(--color-bg) text-white bg-[url(/bg-space.png)] bg-cover bg-center;
+}
+
+.chat-gradient {
+  backdrop-filter: blur(2px);
+  box-shadow: 2px 2px 0px 0px #ffffff1a inset, -2px -2px 0px 0px #ffffff0d inset,
+    0px 0px 0px 0px #ffffff40 inset;
+}
+
+.nav-gradient {
+  backdrop-filter: blur(100px);
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.16) 0%,
+    rgba(255, 255, 255, 0.16) 50%,
+    rgba(0, 0, 0, 0.16) 100%
+  );
+  border-image-slice: 1;
+}
+
+.nav-logo-gradient {
+  border-image-source: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-image-slice: 1;
+}
+
+.nav-search-gradient {
+  backdrop-filter: blur(2px);
+  box-shadow: 1px 1px 0px 0px #ffffff1a inset, -1px -1px 0px 0px #ffffff0d inset,
+    0px 0px 0px 0px #ffffff40 inset;
+}
+
+.chat-message-gradient {
+  box-shadow: 1px 1px 2px 0px #ffffff26 inset, -1px -1px 2px 0px #00000033 inset,
+    0px 0px 5px 0px #ffffff26 inset;
+}
