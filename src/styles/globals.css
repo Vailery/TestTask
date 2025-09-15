@@ -6,7 +6,11 @@
 }
 
 body {
-  @apply bg-(--color-bg) text-white bg-[url(/bg-space.png)] bg-cover bg-center;
+  @apply bg-(--color-bg) text-white bg-[url(/png/bg-space.png)] bg-cover bg-center;
+}
+
+button {
+  cursor: pointer;
 }
 
 .chat-gradient {
