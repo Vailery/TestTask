@@ -1,7 +1,7 @@
-import { Copy, RefreshCcw, ThumbsDown, ThumbsUp, Upload } from "lucide-react";
 import Image from "next/image";
+import ActionsRow, { Action } from "../ui/actions-row";
 
-export default function Messages() {
+export default function Messages({ actions }: { actions: Action[] }) {
     return (
         <div className="flex-1 overflow-y-auto p-6 max-w-[736px] w-full mx-auto">
             <div className="flex flex-col">
@@ -18,13 +18,7 @@ export default function Messages() {
                         <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">Yo, what&apos;s up? How can I help you today?</p>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                        <Copy size={16} className="m-2 text-light-gold" />
-                        <ThumbsUp size={16} className="m-2 text-light-gold" />
-                        <ThumbsDown size={16} className="m-2 text-light-gold" />
-                        <Upload size={16} className="m-2 text-light-gold" />
-                        <RefreshCcw size={16} className="m-2 text-light-gold" />
-                    </div>
+                    <ActionsRow actions={actions} />
                 </div>
 
                 <div className="flex flex-col gap-1 self-end">

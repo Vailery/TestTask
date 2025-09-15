@@ -5,6 +5,8 @@ import Chat from "@/components/shared/chat";
 import Nav from "@/components/shared/nav";
 import Messages from "@/components/shared/messages";
 
+import { defaultActions } from "../content";
+
 export default function ChatPage() {
   return (
     <div className="flex min-h-screen">
@@ -13,7 +15,7 @@ export default function ChatPage() {
       <main className="flex-1 flex flex-col">
         <Header />
 
-        <Messages />
+        <Messages actions={defaultActions} />
 
         <Chat />
       </main>
