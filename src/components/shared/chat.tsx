@@ -1,4 +1,5 @@
 import { Paperclip, Mic, ArrowUp } from "lucide-react";
+import IconButton from "../ui/icon-buttons";
 
 export default function Chat() {
     return (
@@ -27,12 +28,7 @@ export default function Chat() {
                             <Mic size={18} className="text-light-gold" />
                         </button>
 
-                        <button
-                            type="submit"
-                            className="bg-deep-gold p-2.5 rounded-md"
-                        >
-                            <ArrowUp size={20} className="text-black" />
-                        </button>
+                        <IconButton type="submit" icon={ArrowUp} />
                     </div>
                 </div>
             </form>

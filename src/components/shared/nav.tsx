@@ -1,5 +1,6 @@
 import { Plus, Search, MessagesSquare, User, AudioLines, FileText, AlarmClockCheck, Folders, PanelLeftDashed } from "lucide-react";
 import Image from "next/image";
+import IconButton from "../ui/icon-buttons";
 
 export default function Nav() {
     return (
@@ -26,11 +27,7 @@ export default function Nav() {
 
             <div className="flex-1 overflow-y-auto min-h-0">
                 <div className="pt-6 pb-8 flex items-center gap-2">
-                    <button
-                        className="bg-deep-gold p-2.5 rounded-md"
-                    >
-                        <Plus size={18} className="text-black" />
-                    </button>
+                    <IconButton type="button" icon={Plus} />
 
                     <div className="relative nav-search-gradient rounded-md w-full">
                         <Search size={18} className="absolute left-3 top-2.5 text-light-gold" />
