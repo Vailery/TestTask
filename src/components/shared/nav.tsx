@@ -11,7 +11,7 @@ export default function Nav() {
                 <div className="flex items-center gap-1.5">
                     <Image src="/deepshit-logo.svg" alt="Deepershi" width={30} height={30} className="mt-1" />
 
-                    <p className="flex flex-col font-bold leading-none">
+                    <p className="flex flex-col leading-none font-semibold">
                         <span className="text-xl text-light-gold">Deep<span className="text-deep-gold">er</span>shi</span>
                         <span className="text-[10px] text-white">by Deepershi AI</span>
                     </p>

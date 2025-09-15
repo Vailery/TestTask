@@ -7,7 +7,7 @@ export default function Header() {
             <div className="flex items-center gap-1.5">
                 <Image src="/deepshit-logo.svg" alt="Deepershi" width={20} height={20} />
 
-                <span className="font-bold text-sm">Deepershi R1</span>
+                <span className="font-semibold text-sm">Deepershi R1</span>
 
                 <ChevronDown size={20} />
             </div>
