@@ -8,7 +8,7 @@ interface MessagesProps {
 
 export default function Messages({ messages }: MessagesProps) {
     return (
-        <div className="flex-1 overflow-y-auto p-6 max-w-[736px] w-full mx-auto">
+        <div className="flex-1 overflow-y-auto p-6 max-w-[var(--container-max-width)] w-full mx-auto">
             <div className="flex flex-col">
                 {messages?.map((message) => (
                     message.type === 'user' ? (

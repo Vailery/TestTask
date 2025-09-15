@@ -1,4 +1,4 @@
-import { ThumbsDown, ThumbsUp, Upload, RefreshCcw, Copy, LucideIcon } from "lucide-react";
+import { ThumbsDown, ThumbsUp, Upload, RefreshCcw, Copy, LucideIcon, MessagesSquare, User, AudioLines, FileText, AlarmClockCheck, Folders } from "lucide-react";
 
 export type ActionType = 'copy' | 'thumbsUp' | 'thumbsDown' | 'upload' | 'refresh';
 export interface Action {
@@ -71,5 +71,53 @@ export const defaultMessages: Message[] = [
         text: 'Cool, let\'s get that letter written! Could you share who the letter is for, the purpose (e.g., formal, informal, job application, complaint), and any specific points you want to include? This will help me craft something that hits the mark.',
         type: 'bot',
 
+    }
+];
+
+export interface NavItem {
+    id: string;
+    icon: LucideIcon;
+    label: string;
+    href: string;
+    isActive?: boolean;
+}
+
+export const navItems: NavItem[] = [
+    {
+        id: 'chat',
+        icon: MessagesSquare,
+        label: 'Chat',
+        href: '/chat',
+        isActive: true
+    },
+    {
+        id: 'characters',
+        icon: User,
+        label: 'Characters',
+        href: '/characters'
+    },
+    {
+        id: 'voice',
+        icon: AudioLines,
+        label: 'Voice',
+        href: '/voice'
+    },
+    {
+        id: 'files',
+        icon: FileText,
+        label: 'Files',
+        href: '/files'
+    },
+    {
+        id: 'tasks',
+        icon: AlarmClockCheck,
+        label: 'Tasks',
+        href: '/tasks'
+    },
+    {
+        id: 'projects',
+        icon: Folders,
+        label: 'Projects',
+        href: '/projects'
     }
 ];

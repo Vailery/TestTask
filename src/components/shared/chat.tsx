@@ -3,9 +3,9 @@ import IconButton from "../ui/icon-buttons";
 
 export default function Chat() {
     return (
-        <div className="mb-6 mx-auto max-w-[736px] w-full p-2 ">
+        <div className="mb-6 mx-auto max-w-[var(--container-max-width)] w-full p-2 ">
             <form
-                className="flex flex-col gap-8 p-4 pb-3 border-0 rounded-[15px] chat-gradient bg-white/2"
+                className="flex flex-col gap-8 p-4 pb-3 border-0 rounded-[var(--border-radius-large)] chat-gradient bg-white/2"
             >
                 <input
                     type="text"

@@ -13,7 +13,7 @@ export default function BotMessages({ message, actions }: BotMessagesProps) {
             <div className="flex gap-4 items-start py-3">
                 <Image src="/svg/deepshit-logo.svg" alt="avatar" width={29} height={29} />
 
-                <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">
+                <p className="max-w-[var(--message-max-width)] w-fit font-medium text-light-gold text-base">
                     {message}
                 </p>
             </div>
