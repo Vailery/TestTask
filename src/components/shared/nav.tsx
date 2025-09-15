@@ -1,4 +1,4 @@
-import { Plus, Search, MessagesSquare, User, AudioLines, FileText, AlarmClockCheck, Folders, PanelLeftDashed } from "lucide-react";
+import { Plus, MessagesSquare, User, AudioLines, FileText, AlarmClockCheck, Folders } from "lucide-react";
 import Image from "next/image";
 import IconButton from "../ui/icon-buttons";
 
@@ -9,7 +9,7 @@ export default function Nav() {
         >
             <div className="flex items-center justify-between pb-6 border-b nav-logo-gradient flex-shrink-0">
                 <div className="flex items-center gap-1.5">
-                    <Image src="/deepshit-logo.svg" alt="Deepershi" width={30} height={30} className="mt-1" />
+                    <Image src="/svg/deepshit-logo.svg" alt="Deepershi" width={30} height={30} className="mt-1" />
 
                     <p className="flex flex-col leading-none font-semibold">
                         <span className="text-xl text-light-gold">Deep<span className="text-deep-gold">er</span>shi</span>
@@ -21,7 +21,7 @@ export default function Nav() {
                 <button
                     type="button"
                 >
-                    <PanelLeftDashed size={24} className="text-light-gold" />
+                    <Image src="/svg/sidebar-icon.svg" alt="sidebar" width={24} height={24} className="text-light-gold" />
                 </button>
             </div>
 
@@ -30,7 +30,7 @@ export default function Nav() {
                     <IconButton type="button" icon={Plus} />
 
                     <div className="relative nav-search-gradient rounded-md w-full">
-                        <Search size={18} className="absolute left-3 top-2.5 text-light-gold" />
+                        <Image src="/svg/search-icon.svg" alt="search" width={18} height={18} className="absolute left-3 top-2.5 text-light-gold" />
 
                         <input
                             type="text"

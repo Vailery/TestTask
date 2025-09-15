@@ -13,7 +13,7 @@ export default function Messages({ actions }: { actions: Action[] }) {
 
                 <div className="flex flex-col gap-1">
                     <div className="flex gap-4 items-start py-3">
-                        <Image src="/deepshit-logo.svg" alt="avatar" width={29} height={29} />
+                        <Image src="/svg/deepshit-logo.svg" alt="avatar" width={29} height={29} />
 
                         <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">Yo, what&apos;s up? How can I help you today?</p>
                     </div>
@@ -29,7 +29,7 @@ export default function Messages({ actions }: { actions: Action[] }) {
 
                 <div className="flex flex-col gap-1">
                     <div className="flex gap-4 items-start py-3">
-                        <Image src="/deepshit-logo.svg" alt="avatar" width={29} height={29} />
+                        <Image src="/svg/deepshit-logo.svg" alt="avatar" width={29} height={29} />
 
                         <p className="max-w-[630px] w-fit font-medium text-light-gold text-base">
                             Cool, let&apos;s get that letter written! Could you share who the letter is for, the purpose (e.g., formal, informal, job application, complaint), and any specific points you want to include? This will help me craft something that hits the mark.

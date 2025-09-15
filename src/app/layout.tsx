@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Deepershi",
   description: "by Deepershi AI",
   icons: {
-    icon: "/deepshit-logo.svg"
+    icon: "/svg/deepshit-logo.svg"
   }
 };
 

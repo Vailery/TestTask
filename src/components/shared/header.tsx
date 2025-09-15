@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="px-6 py-4.5 flex items-center justify-between">
             <button type="button" className="flex items-center gap-1.5">
-                <Image src="/deepshit-logo.svg" alt="Deepershi" width={20} height={20} />
+                <Image src="/svg/deepshit-logo.svg" alt="Deepershi" width={20} height={20} />
 
                 <span className="font-semibold text-sm">Deepershi R1</span>
 
