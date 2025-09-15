@@ -1,7 +1,9 @@
-import { Plus, MessagesSquare, User, AudioLines, FileText, AlarmClockCheck, Folders } from "lucide-react";
+import { Plus } from "lucide-react";
 import Image from "next/image";
 import IconButton from "../ui/icon-buttons";
 import Link from "next/link";
+import NavItem from "../ui/nav-item";
+import { navItems } from "@/app/(chat)/content";
 
 export default function Nav() {
     return (
@@ -43,24 +45,15 @@ export default function Nav() {
                 </div>
 
                 <nav className="space-y-3 text-sm">
-                    <div className="flex items-center gap-3 px-2.5 py-3 hover:bg-gray-800 rounded cursor-pointer text-light-gold nav-search-gradient ">
-                        <MessagesSquare size={20} className="text-light-gold" /> Chat
-                    </div>
-                    <div className="flex items-center gap-2 px-2.5 py-3 hover:bg-gray-800 rounded cursor-pointer text-light-gold">
-                        <User size={20} className="text-light-gold" /> Characters
-                    </div>
-                    <div className="flex items-center gap-2 px-2.5 py-3 hover:bg-gray-800 rounded cursor-pointer text-light-gold">
-                        <AudioLines size={20} className="text-light-gold" /> Voice
-                    </div>
-                    <div className="flex items-center gap-2 px-2.5 py-3 hover:bg-gray-800 rounded cursor-pointer text-light-gold">
-                        <FileText size={20} className="text-light-gold" /> Files
-                    </div>
-                    <div className="flex items-center gap-2 px-2.5 py-3 hover:bg-gray-800 rounded cursor-pointer text-light-gold">
-                        <AlarmClockCheck size={20} className="text-light-gold" /> Tasks
-                    </div>
-                    <div className="flex items-center gap-2 px-2.5 py-3 hover:bg-gray-800 rounded cursor-pointer text-light-gold">
-                        <Folders size={20} className="text-light-gold" /> Projects
-                    </div>
+                    {navItems.map((item) => (
+                        <NavItem
+                            key={item.id}
+                            icon={item.icon}
+                            label={item.label}
+                            href={item.href}
+                            isActive={item.isActive}
+                        />
+                    ))}
                 </nav>
 
                 <div className="mt-8 pt-5 pb-4 text-sm gap-2.5 flex flex-col">
