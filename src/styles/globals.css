@@ -9,6 +9,10 @@ body {
   @apply bg-(--color-bg) text-white bg-[url(/bg-space.png)] bg-cover bg-center;
 }
 
+button {
+  cursor: pointer;
+}
+
 .chat-gradient {
   backdrop-filter: blur(2px);
   box-shadow: 2px 2px 0px 0px #ffffff1a inset, -2px -2px 0px 0px #ffffff0d inset,
