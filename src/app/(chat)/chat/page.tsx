@@ -5,7 +5,7 @@ import Chat from "@/components/shared/chat";
 import Nav from "@/components/shared/nav";
 import Messages from "@/components/shared/messages";
 
-import { defaultActions } from "../content";
+import { defaultActions, defaultMessages } from "../content";
 
 export default function ChatPage() {
   return (
@@ -15,7 +15,7 @@ export default function ChatPage() {
       <main className="flex-1 flex flex-col">
         <Header />
 
-        <Messages actions={defaultActions} />
+        <Messages actions={defaultActions} messages={defaultMessages} />
 
         <Chat />
       </main>

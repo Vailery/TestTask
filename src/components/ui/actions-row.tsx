@@ -1,14 +1,4 @@
-import { ThumbsDown, ThumbsUp, Upload, RefreshCcw, Copy, LucideIcon } from "lucide-react";
-
-export type ActionType = 'copy' | 'thumbsUp' | 'thumbsDown' | 'upload' | 'refresh';
-
-export interface Action {
-    type: ActionType;
-    icon: LucideIcon;
-    onClick: () => void;
-    disabled?: boolean;
-    tooltip?: string;
-}
+import { Action } from "@/app/(chat)/content";
 
 interface ActionsRowProps {
     actions?: Action[];
