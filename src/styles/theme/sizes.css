@@ -1,0 +1,31 @@
+@theme {
+  /* Sidebar widths */
+  --sidebar-width-full: 280px;
+  --sidebar-width-mini: 64px;
+
+  /* Content margins */
+  --content-margin-full: 280px;
+  --content-margin-mini: 64px;
+
+  /* Content widths */
+  --content-width-full: calc(100vw - 280px);
+  --content-width-mini: calc(100vw - 64px);
+
+  /* Container widths */
+  --container-max-width: 736px;
+  --message-max-width: 630px;
+
+  /* Icon sizes */
+  --icon-size-small: 16px;
+  --icon-size-medium: 20px;
+  --icon-size-large: 24px;
+
+  /* Spacing */
+  --spacing-sidebar-padding-full: 16px;
+  --spacing-sidebar-padding-mini: 8px;
+
+  /* Border radius */
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 15px;
+}
